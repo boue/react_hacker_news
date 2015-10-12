@@ -3,6 +3,24 @@
   margin-top: 5px;
 }
 
+.newsItem-domain {
+  font-size: 8pt;
+  margin-left: 5px;
+}
+
+.newsItem-subtext {
+  font-size: 7pt;
+}
+
+.newsItem-subtext > a {
+  color: #828282;
+  text-decoration: none;
+}
+
+.newsItem-subtext > a:hover {
+  text-decoration: underline;
+}
+
 .newsItem-titleLink{
   color: black;
   font-size: 10pt;
