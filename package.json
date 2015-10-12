@@ -1,0 +1,10 @@
+{
+  "name": "hn",
+  "version": "0.1.0",
+  "private": true,
+  "browserify": {
+    "transform": [
+      ["reactify"]
+    ]
+  }
+}
