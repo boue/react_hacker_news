@@ -146,7 +146,7 @@ var NewsHeader = React.createClass({displayName: "NewsHeader",
         _(navLinks).map(function(navLink){
           return(
             React.createElement("a", {key: navLink.url, className: "newsHeader-navLink newsHeader-textLink", href: 'https://news.ycombinator.com/' + navLink.url}, 
-              nav.Link.name
+              navLink.name
             )
           );
         }).value()

@@ -52,7 +52,7 @@ var NewsHeader = React.createClass({
         {_(navLinks).map(function(navLink){
           return(
             <a key={navLink.url} className="newsHeader-navLink newsHeader-textLink" href={'https://news.ycombinator.com/' + navLink.url}>
-              {nav.Link.name}
+              {navLink.name}
             </a>
           );
         }).value()}
