@@ -27,6 +27,10 @@
   text-decoration: none;
 }
 
+.newsHeader-login {
+  margin-right: 5px;
+}
+
 .newsHeader-title {
   font-weight: bold;
   margin-left: 4px;
