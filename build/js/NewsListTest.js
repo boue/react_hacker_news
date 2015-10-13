@@ -1681,6 +1681,15 @@ var NewsItem = require('./NewsItem');
 var React = require('react');
 
 var NewsList = React.createClass({displayName: "NewsList",
+
+  getMore: function(){
+    return(
+      React.createElement("div", {className: "newsList-more"}, 
+        React.createElement("a", {className: "newsList-moreLink", href: "https://news.ycombinator.com/news?p=2"}, "More")
+      )
+    );
+  },
+
   render: function(){
     return(
       React.createElement("div", {className: "newsList"}, 
@@ -1689,7 +1698,8 @@ var NewsList = React.createClass({displayName: "NewsList",
           _(this.props.items).map(function (item, index){
             return React.createElement(NewsItem, {key: item.id, item: item, rank: index + 1});
           }.bind(this)).value()
-        )
+        ), 
+        this.getMore()
       )
     );
   }
